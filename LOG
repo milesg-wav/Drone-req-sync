@@ -8,3 +8,8 @@ Trigger: Polling from gsheet to ghub, webhooks trigger updates from ghub
 Mapping:
 Failure:
 Access:
+
+11/6/26
+What I did:
+What broke:
+How I fixed it:

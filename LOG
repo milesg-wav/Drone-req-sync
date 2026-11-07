@@ -1,14 +1,6 @@
 Created 11/6/26
 Requirements and verification sync for small FPV drone
 
-Source of truth: Google sheet
-Direction: Google sheet POSTs requirements to Github Issues via Python sync script
-           Github PATCHes updates to google sheet
-Trigger: Polling from gsheet to ghub, webhooks trigger updates from ghub
-Mapping:
-Failure:
-Access:
-
 11/6/26
 What I did:
 What broke:

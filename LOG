@@ -1,7 +1,15 @@
 Created 11/6/26
 Requirements and verification sync for small FPV drone
 
-11/6/26
-What I did:
+11/8/26
+What I did: 
+Created a google colab python script to grant OAuth to my gaccount. 
+Defined a variable gc as a client that carries my creds, then ran the open function within the client. 
+Defined variable raw as the "raw" tab in my "FPV Drone Requirements" spreadsheet. Called raw to display within the colab window.
+I called a GET request to gsheets and returned my gsheet data formatted nicely via the pandas library in gspread.
 What broke:
+I purposefully didnt authorize the gcloud permissions in the OAuth, and the script broke due to incorrect permissions.
 How I fixed it:
+Re-ran the script and gave all permissions. Least privilege is a valid concern, but restricting necessary privileges can cause an auth to fail.
+Service accounts can be used to manage permissions to company wide files. An auth is scoped to the entire service account, but the customer
+only grants permission to the service account for the assetts they choose. Service account ccess can be revoked at any time, therefore revoking the APIs access to the files.
